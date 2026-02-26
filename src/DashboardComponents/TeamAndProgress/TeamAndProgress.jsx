@@ -9,11 +9,13 @@ const TeamAndProgress = () => {
         { name: 'David Oshodi', task: 'Responsive Layout for Homepage', status: 'In Progress', color: 'bg-orange-200', avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=David' },
     ];
 
+    
+
     return (
         <div className="flex flex-col lg:flex-row gap-6  mt-6">
 
           
-            <div className="flex-1 bg-white rounded-[32px] p-8 shadow-sm border border-gray-50">
+            <div className="flex-1 bg-white rounded-[32px] p-4  shadow-sm border border-gray-50">
                 <div className="flex items-center justify-between mb-8">
                     <h3 className="text-xl font-bold text-gray-900">Team Collaboration</h3>
                     <button className="flex items-center gap-2 px-4 py-1.5 border border-[#16423C] text-[#16423C] rounded-full text-sm font-semibold hover:bg-gray-50 transition-all">
@@ -72,7 +74,7 @@ const TeamAndProgress = () => {
                             />
 
                             <path
-                                d="M 58,11 A 40,40 0 0 1 78,25"
+                                d="M 58,11 A 40,40 0 0 1 78,22"
                                 fill="none"
                                 stroke="#103D2A"
                                 strokeWidth="16"

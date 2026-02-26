@@ -30,7 +30,7 @@ const ProjectCounter = () => {
     ];
 
     return (
-        <div className="bg-gray-100  p-6 font-sans">
+        <div className="bg-gray-100   font-sans">
             <div className="max-w-5xl mx-auto">
 
            
@@ -56,7 +56,7 @@ const ProjectCounter = () => {
                     {stats.map((stat, index) => (
                         <div
                             key={index}
-                            className={`relative rounded-2xl p-5 flex flex-col justify-between min-h-[140px] overflow-hidden ${stat.highlight
+                            className={`relative rounded-2xl  p-5 flex flex-col justify-between min-h-[140px] overflow-hidden ${stat.highlight
                                     ? 'bg-[#1a4d3a] text-white'
                                     : 'bg-white text-gray-900'
                                 }`}

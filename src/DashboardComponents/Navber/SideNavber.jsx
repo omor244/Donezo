@@ -9,6 +9,7 @@ import {
     HelpCircle,
     LogOut
 } from 'lucide-react';
+import DownloadMobileApp from '../Card/DownloadMobileApp';
 
 const SideNavbar = () => {
     const menuItems = [
@@ -74,7 +75,7 @@ const SideNavbar = () => {
             {/* 4. Download Card Section (Matching Screenshot 38) */}
            
             <div className='mt-10'>
-                <img src="/download.png" alt="" />
+                <DownloadMobileApp></DownloadMobileApp>
            </div>
 
         </div>
