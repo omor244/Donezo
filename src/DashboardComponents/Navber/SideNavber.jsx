@@ -29,8 +29,8 @@ const SideNavbar = () => {
         <div className="bg-base-200 flex flex-col px-6 py-8 border-r border-gray-100 sticky top-0">
 
          
-            <div className="flex items-center gap-2 mb-10 px-2">
-               <img src="/logo.png" alt="" />
+            <div className="flex items-center  gap-2 mb-10 px-2">
+               <img className='cursor-pointer' src="/logo.png" alt="" />
             </div>
 
             {/* 2. Menu Section */}
@@ -74,7 +74,7 @@ const SideNavbar = () => {
             {/* 4. Download Card Section (Matching Screenshot 38) */}
            
             <div className='mt-10'>
-                <img src="../../../public/download.png" alt="" />
+                <img src="/download.png" alt="" />
            </div>
 
         </div>
