@@ -26,7 +26,7 @@ const SideNavbar = () => {
     ];
 
     return (
-        <div className="w-64  bg-base-200 flex flex-col px-6 py-8 border-r border-gray-100 sticky top-0">
+        <div className="bg-base-200 flex flex-col px-6 py-8 border-r border-gray-100 sticky top-0">
 
          
             <div className="flex items-center gap-2 mb-10 px-2">

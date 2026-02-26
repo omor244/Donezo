@@ -3,22 +3,12 @@ import { Search, Mail, Bell, Command, ChevronDown } from 'lucide-react';
 
 const DashboardNavbar = () => {
     return (
-        <nav className="flex items-center justify-between px-8 py-4 bg-transparent w-full">
+        <nav className="flex bg-base-200 items-center justify-between px-8 py-4  w-full">
 
-            {/* 1. Left Side: Donezo Logo (Same as image) */}
-            <div className="flex items-center gap-2">
-                <div className="flex items-center justify-center">
-                    {/* Custom SVG to match the exact Donezo clover-like logo in the image */}
-                    <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 5 20 5C11.7157 5 5 11.7157 5 20C5 28.2843 11.7157 35 20 35Z" stroke="#219B60" strokeWidth="2.5" />
-                        <path d="M12 18.5C12 15.5 14.5 13 17.5 13C20.5 13 23 15.5 23 18.5V20.5C23 23.5 20.5 26 17.5 26C14.5 26 12 23.5 12 20.5V18.5Z" stroke="#16423C" strokeWidth="2" />
-                        <circle cx="20" cy="20" r="3" fill="#219B60" />
-                    </svg>
-                </div>
-                <span className="text-2xl font-bold text-[#111827]">Donezo</span>
-            </div>
+       
+           
 
-            {/* 2. Middle: Search Bar Section */}
+          
             <div className="flex-1 flex justify-center max-w-xl mx-10">
                 <div className="relative w-full">
                     <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
