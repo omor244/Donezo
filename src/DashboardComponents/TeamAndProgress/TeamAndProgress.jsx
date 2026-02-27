@@ -119,9 +119,7 @@ const TeamAndProgress = () => {
                             
                             <div
                                 className="absolute bg-primary inset-0 opacity-10"
-                                // style={{
-                                //     backgroundImage: 'repeating-linear-gradient(45deg, #BDC3C7, #BDC3C7 1px, transparent 1px, transparent 3px)'
-                                // }}
+                               
                             ></div>
                         </div>
                         <span className="text-[13px] font-bold text-gray-400">Pending</span>

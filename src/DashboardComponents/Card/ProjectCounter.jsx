@@ -1,5 +1,6 @@
 import { ArrowUpRight, Plus, Upload, TrendingUp } from 'lucide-react';
 import Swal from 'sweetalert2';
+import * as motion from "motion/react-client"
 
 const ProjectCounter = () => {
     const stats = [
@@ -33,6 +34,8 @@ const ProjectCounter = () => {
         Swal.fire("Error", "Admin Can Add Project", "error");
     };
 
+   
+
     return (
         <div className="bg-gray-100  font-sans p-4 md:p-6">
             <div className="  lg:max-w-7xl mx-auto">
@@ -45,7 +48,7 @@ const ProjectCounter = () => {
                     <div className="flex items-center gap-3">
                         <button
                             onClick={handelAppProject}
-                            className="flex-1 md:flex-none flex items-center justify-center gap-2 bg-[#1a4d3a] hover:bg-[#1f5c46] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 active:scale-95"
+                            className="flex-1 md:flex-none cursor-pointer flex items-center justify-center gap-2 bg-[#1a4d3a] hover:bg-[#1f5c46] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 active:scale-95"
                         >
                             <Plus className="w-4 h-4" />
                             Add Project
@@ -56,10 +59,14 @@ const ProjectCounter = () => {
                         </button>
                     </div>
                 </div>
-
+               
+                
                 <div className="grid grid-cols-1 w-full lg:grid-cols-4 gap-4">
                     {stats.map((stat, index) => (
-                        <div
+                        <motion.div
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 0.8 }}
+                           
                             key={index}
                             className={`relative rounded-[24px] p-6 flex flex-col justify-between min-h-[160px] transition-transform duration-300 hover:-translate-y-1 shadow-sm ${stat.highlight
                                     ? 'bg-[#1a4d3a] text-white'
@@ -92,7 +99,7 @@ const ProjectCounter = () => {
                                 </div>
                                 {stat.badge}
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 
