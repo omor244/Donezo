@@ -106,7 +106,7 @@ const Projects = () => {
             <div className="space-y-10">
                 {projects.map((project, index) => (
                     <div key={index} className="space-y-6">
-                        <div className="relative overflow-hidden group flex items-center justify-between p-2 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer">
+                        <div className="relative overflow-hidden group flex items-center justify-between p-5 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer">
 
                           
                             <div className="flex items-center gap-5 z-10">
@@ -132,7 +132,7 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                           <div className="flex flex-col items-end z-10">
+                          <div className="flex flex-col items-end z-10">
                                 <div className="flex items-center gap-1.5 text-[#2D6A4F] mb-1">
                                     <TrendingUp size={14} />
                                     <span className="text-xs font-black">{project.sales} Sales</span>

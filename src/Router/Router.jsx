@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Login from "../Components/Login/Login";
 import MainLayOut from "../LayOut/MainLayOut";
 import Dashboard from "../DashboardComponents/Dashboard";
+import PrivateRoute from "./PrivateRoute";
 
 
 export const router = createBrowserRouter([
@@ -11,7 +12,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "/", 
-                element: <Dashboard></Dashboard>
+                element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>
             }
         ]
     },
