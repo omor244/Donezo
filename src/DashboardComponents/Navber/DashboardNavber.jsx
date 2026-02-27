@@ -28,9 +28,9 @@ const DashboardNavbar = () => {
                 </div>
             </div>
 
-            {/* 3. Right Side: Notifications & Correct User Avatar (Same as image) */}
+        
             <div className="flex items-center gap-4">
-                {/* Interaction Icons */}
+               
                 <div className="flex items-center gap-2">
                     <button className="p-2.5 bg-white rounded-xl shadow-sm border border-gray-100 text-gray-400 hover:bg-gray-50">
                         <Mail size={20} />
@@ -40,9 +40,9 @@ const DashboardNavbar = () => {
                     </button>
                 </div>
 
-                {/* User Profile Section (Matching Image exactly) */}
+              
                 <div className="flex items-center gap-3">
-                    {/* Circular Avatar with the same skin tone/style from image */}
+               
                     <div className="relative w-10 h-10">
                         <img
                             src="https://api.dicebear.com/7.x/avataaars/svg?seed=Totok&backgroundColor=FFD5DC"
@@ -50,7 +50,7 @@ const DashboardNavbar = () => {
                             className="w-full h-full rounded-full object-cover bg-[#FFD5DC]"
                         />
                     </div>
-                    {/* User Text Info */}
+                 
                     <div className="flex flex-col text-left">
                         <span className="text-sm font-bold text-gray-900 leading-none mb-1">Totok Michael</span>
                         <span className="text-[11px] text-gray-400">tmichael20@mail.com</span>

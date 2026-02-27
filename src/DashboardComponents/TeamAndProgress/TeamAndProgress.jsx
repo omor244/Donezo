@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Plus } from 'lucide-react';
 
 const TeamAndProgress = () => {
@@ -12,13 +12,13 @@ const TeamAndProgress = () => {
     
 
     return (
-        <div className="flex flex-col lg:flex-row gap-6  mt-6">
+        <div className="flex flex-col lg:flex-row gap-4 mt-6">
 
           
-            <div className="flex-1 bg-white rounded-[32px] p-4  shadow-sm border border-gray-50">
+            <div className="flex-1  bg-white rounded-[32px] p-4  shadow-sm border border-gray-50">
                 <div className="flex items-center justify-between mb-8">
                     <h3 className="text-xl font-bold text-gray-900">Team Collaboration</h3>
-                    <button className="flex items-center gap-2 px-4 py-1.5 border border-[#16423C] text-[#16423C] rounded-full text-sm font-semibold hover:bg-gray-50 transition-all">
+                    <button className="flex cursor-pointer items-center gap-2 px-4 py-1.5 border border-[#16423C] text-[#16423C] rounded-full text-sm font-semibold hover:bg-gray-50 transition-all">
                         <Plus size={16} />
                         Add Member
                     </button>
@@ -50,7 +50,7 @@ const TeamAndProgress = () => {
             </div>
 
          
-            <div className="  bg-white rounded-[40px] p-10 shadow-sm border border-gray-50">
+            <div className=" lg:w-[370px] bg-white rounded-[40px] p-4 py-5 shadow-sm border border-gray-50">
                 <h3 className="text-2xl font-bold text-gray-900 mb-10">Project Progress</h3>
 
                 <div className="relative flex flex-col items-center justify-center min-h-[260px]">
@@ -100,7 +100,7 @@ const TeamAndProgress = () => {
                 </div>
 
               
-                <div className="flex items-center justify-between space-x-5 mt-10 px-4">
+                <div className="lg:flex items-center justify-between space-x-5 mt-10 px-4">
                   
                     <div className="flex items-center gap-2">
                         <div className="w-3.5 h-3.5 rounded-full bg-[#1F6E4A]"></div>
@@ -119,9 +119,9 @@ const TeamAndProgress = () => {
                             
                             <div
                                 className="absolute bg-primary inset-0 opacity-10"
-                                style={{
-                                    backgroundImage: 'repeating-linear-gradient(45deg, #BDC3C7, #BDC3C7 1px, transparent 1px, transparent 3px)'
-                                }}
+                                // style={{
+                                //     backgroundImage: 'repeating-linear-gradient(45deg, #BDC3C7, #BDC3C7 1px, transparent 1px, transparent 3px)'
+                                // }}
                             ></div>
                         </div>
                         <span className="text-[13px] font-bold text-gray-400">Pending</span>

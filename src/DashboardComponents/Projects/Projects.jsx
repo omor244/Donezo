@@ -63,7 +63,7 @@ const Projects = () => {
           
             <div className="flex items-center justify-between mb-10">
                 <h3 className="text-2xl font-bold text-gray-900 tracking-tight">Project</h3>
-                <button className="flex items-center gap-1 px-4 py-1.5 border border-[#16423C] text-[#16423C] rounded-full text-sm font-semibold hover:bg-gray-50 transition-all">
+                <button className="flex cursor-pointer items-center gap-1 px-4 py-1.5 border border-[#16423C] text-[#16423C] rounded-full text-sm font-semibold hover:bg-gray-50 transition-all">
                     <Plus size={16} /> New
                 </button>
             </div>

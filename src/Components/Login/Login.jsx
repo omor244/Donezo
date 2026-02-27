@@ -34,7 +34,7 @@ const Login = () => {
                 localStorage.setItem('token', JSON.stringify(response.data));
 
                 Swal.fire("Success", "Successfully Login", "Success")
-                navigate('/dashboard');
+                navigate('/');
             }
         } catch (err) {
            
